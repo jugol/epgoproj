@@ -17,7 +17,7 @@ app.use(helmet());//보안 관련 라이브러리
 
 //database
 mongoose.Promise = global.Promise;
-mongoose.connect("몽고디비에 접속할 로그인 주소 입력", {useMongoClient: true});
+mongoose.connect("mongodb://root:rootroot@ds062448.mlab.com:62448/proj-test2", {useMongoClient: true});
 var db = mongoose.connection;
 db.once('open', function () {
    console.log('DB connected!');
